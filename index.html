@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./pic/Untitled-1.jpg" />
+
+</head>
+<body>
+    <div class="api"></div>
+    <section class="top-banner">
+        <div class="container">
+            <h1 class="heading">
+                Today Weather
+            </h1>
+            <form >
+                <input type="text" class="form_field" placeholder="Search for a city" autofocus>
+                <button type="submit">Submit</button>
+                <span class="msg"></span>
+            </form>
+        </div>
+    </section>
+    <section class="ajax-section">
+        <div class="container">
+          <ul class="cities"></ul>
+        </div>
+    </section>
+    <footer class=page-footer>
+      <div class="container">
+        <smail></small>
+      </div>
+    </footer>
+    <script type="text/javascript">
+        var currentTime = new Date().getHours();
+        if (document.body) {
+            if (7 <= currentTime && currentTime < 20) {
+                document.body.background = "https://i.ibb.co/1v5hbgC/day.jpg";
+            }
+            else {
+                document.body.background = "https://i.ibb.co/QmXQVb6/night.jpg";
+            }
+        }
+        </script>
+    <script src="main.js"></script>
+</body>
+</html>
